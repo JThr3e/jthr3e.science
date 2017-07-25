@@ -49,16 +49,25 @@
 	}
 	
 	li{
+		
+	}
+	
+	.projects {
+		text-align: center;
+	}
+	
+	.projectItem {
 		font-size: 25px;
 		display: inline-block;
-		margin: 30px;
+		margin: auto;
+		width: 380px;
+		height: 410px;
 		color: #FFF;
-		
 	}
 	
 	.containerBox {
 		position: relative;
-		display: inline-block;   
+		display: inline-block;  
 		border: 2px solid rgba(255,255,255, 0.6);
 	}
 	
@@ -99,17 +108,17 @@
 	.mainHead{
 		position: relative;
 		color: White;
-		font-size: 35px;
+		font-size: 40px;
 		text-shadow: 1px 1px #ff0000;
 		text-align: center;
 	}
 	
 	.pgh-text {
 		text-align: center;
-		width: 50%;
+		width: 70%;
 		margin: auto;
 		position: relative;
-		font-size: 20px;
+		font-size: 25px;
 		color: #FFF;
 		text-shadow: 2px 2px #000;
 		background-color: rgba(0,100,100, 0.4);
@@ -151,7 +160,7 @@
 	.menu {
 		box-sizing: border-box;
 		width: 100%;
-		height: 10%;
+		height: 60px;
 		text-align: center;
 		position: fixed;
 		z-index: 1000;
