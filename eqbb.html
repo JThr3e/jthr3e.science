@@ -7,25 +7,54 @@
    href = "style.css" />
 </head>
 <body>
-<a href="index.html">
-	<h1>J3 Tech</h1>
+<div class="menu">
+<div class="titleLink">
+	J3 Tech
+</div>
+<a class="linkBar" href="index.html">
+	Home
 </a>
+<a class="linkBar" href="about.html">
+	About
+</a>
+<a class="linkBar" href="contactme.html">
+	Contact Me
+</a>
+</div>
+<br>
+<br>
+<br>
 <div class="description">
-<p>BLERP BLERB - a blankity blank</p>
+<p>EQ Boom Box - Straight from the Dumpster</p>
 </div>
 <hr width="70%">
-<img class="ft-photo" src="https://scontent-iad3-1.cdninstagram.com/t51.2885-15/e35/1172995_394569870713739_782944882_n.jpg">
+<img class="ft-photo" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e15/19625050_240989109740998_2631688820612923392_n.jpg">
+<div class="bodyText">
+<p class="mainHead">Start Date:</p>
+<p class="pgh-text">May 2017</p>
 <p class="mainHead">Completion Date:</p>
-<p class="pgh-text">01/01/12016</p>
+<p class="pgh-text">July 2017</p>
 <p class="mainHead">Languages & Technologies Used: </p>
-<p class="pgh-text"></p>
+<p class="pgh-text">Arduino/C, Analog Passive Filters (RC), Amplifiers, LED matrix, Serial Communications</p>
 <p class="mainHead">Description:</p>
-<p class="pgh-text"></p>
+<p class="pgh-text">The EQ Boom Box has an AUX cable that can be plugged in to your phone. As the EQ Boom Box plays music, the LED display will show a 3 band EQ of the audio that is playing.</p>
+<p class="mainHead">Inspiration:</p>
+<p class="pgh-text">One night I decided to go dumpster diving. My neighborhood occasionally has public dumpsters where people can throw away things they don’t need anymore. So, I decided to see if there was anything that might be of use to me. Among my spoils were many different types of cables, chargers, wires, a set of nice speakers (in working condition), and … an iPhone?! Anyway, I decided I would hook the speakers up to a cheap amplifier I got off amazon so they could play music from my phone. This worked, and was cool and everything, but I thought about ways to make it cooler. I decided I should add an LED board EQ display.</p>
 <p class="mainHead">Development & Challenges:</p>
-<p class="pgh-text"></p>
+<p class="pgh-text">To make an LED display of the EQ, I had to find some way to process the audio signal to get the amplitudes of certain frequency bands. Among my options were FIR filters, Fast Fourier transform, and Analog circuit filters. I decided to go with the analog circuit filters because they do not take up any additional processing power, and they are fairly simple to understand.</p>
+<p class="pgh-text">Using a set of three of these filters (a high pass, band pass, and low pass) I create 3 different frequency bands. After the filtering, an Arduino Nano samples the signals from each filter and processes a sliding window of samples to create a smooth visual for the LED matrix. Finally, the Arduino Nano sends what lights to turn on over Serial to the Adafruit metro mini that controls the LED matrix.</p>
 <p class="mainHead">Shortcomings:</p>
-<p class="pgh-text"></p>
+<p class="pgh-text">Although I designed and tested all the circuitry before soldering it in to perf board, I did not design the entire project before creating it. This combined with the fact I didn’t know how to use power tools very well led to the frame of the boom box to be of poor build quality.</p>
 <p class="mainHead">External links:</p>
-<p class="pgh-text"></p>
+<a href = "https://goo.gl/photos/XD4tFCn3Q9bXTCpV7">
+<p class="link">Project Photos!</p>
+</a>
+<a href = "https://github.com/JThr3e/EQBoomBox">
+<p class="link">Github</p>
+</a>
+<br>
+<br>
+<br>
+</div>
 </body>
 </html>
