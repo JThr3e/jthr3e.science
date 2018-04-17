@@ -3,7 +3,7 @@
 		
 	}
 	body {
-		background-image: url("https://scontent-iad3-1.cdninstagram.com/t51.2885-15/e35/15875735_260248714389031_4489359882343940096_n.jpg");
+		/* background-image: url("https://s3.amazonaws.com/jthr3e.science/res/bkgr.jpg"); */
 		background-size: cover;
 		background-attachment: fixed;
 	}
@@ -78,10 +78,10 @@
 	}
 	
 	.description {
-		position: relative; 
-		text-align: center;    
-		text-shadow: 1px 1px #00ff00;
-		color: Green;
+		position: relative;
+		text-align: center;
+		text-shadow: 1px 1px rgba(0,0,0, 0.8);
+		color: rgba(100,100,100, 1.0);
 		font-size: 30px;
 	}
 	
@@ -163,7 +163,7 @@
 		height: 60px;
 		text-align: center;
 		z-index: 1000;
-		background-color: rgba(40,100,255, 1.0);
+		background-color: rgba(255,255,255, 0.9);
 		border-radius: 10px;
 		width: 90%;
 		position: fixed;
@@ -174,31 +174,31 @@
 	
 	
 	.linkBar {
-		display: inline-block;   
-		background-color: rgba(0,0,255, 1.0);
+		display: inline-block;
+		background-color: rgba(255,255,255, 0.9);
 		font-size: 30px;
-		color: rgba(255,255,255, 1.0);
+		color: rgba(0,0,0, 0.8);
 		width: 20%;
 		height: 100%;
 		margin: auto;
 		text-decoration: none;
 		box-sizing: border-box;
-		border: 3px solid rgba(155,155,155, 0.9);
+		border: 3px solid rgba(255,255,255, 0.9);
 		border-radius: 10px;
 	}
 	
 	.titleLink{
-		display: inline-block;   
-		background-color: rgba(10,50,180, 1.0);
+		display: inline-block;
+		background-color: rgba(255,255,255, 0.9);
 		font-size: 30px;
-		color: rgba(255,255,255, 1.0);
+		color: rgba(0,0,0, 0.8);
 		width: 23%;
 		height: 100%;
 		margin: auto;
 		text-align: middle;
 		text-decoration: none;
 		box-sizing: border-box;
-		border: 3px solid rgba(155,155,155, 0.9);
+		border: 3px solid rgba(255,255,255, 0.9);
 		border-radius: 10px;
 	}
 	
