@@ -1,60 +1,192 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>JThr3e Projects</title>
-	<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
-</head>
-<body>
-<div class="menu">
-<div class="titleLink">
-	JThr3e Projects
-</div>
-<a class="linkBar" href="index.html">
-	Home
-</a>
-<a class="linkBar" href="about.html">
-	About
-</a>
-<a class="linkBar" href="contactme.html">
-	Contact Me
-</a>
-</div>
-<br>
-<br>
-<br>
-<div class="description">
-<p>EQ Boom Box - Straight from the Dumpster</p>
-</div>
-<hr width="70%">
-<img class="ft-photo" src="https://s3.amazonaws.com/jthr3e.science/res/EQBB.jpg">
-<div class="bodyText">
-<p class="mainHead">Start Date:</p>
-<p class="pgh-text">May 2017</p>
-<p class="mainHead">Completion Date:</p>
-<p class="pgh-text">July 2017</p>
-<p class="mainHead">Languages & Technologies Used: </p>
-<p class="pgh-text">Arduino/C, Analog Passive Filters (RC), Amplifiers, LED matrix, Serial Communications</p>
-<p class="mainHead">Description:</p>
-<p class="pgh-text">The EQ Boom Box has an AUX cable that can be plugged in to a phone or other audio source. As the EQ Boom Box plays music, the LED display will show a 3 band EQ of the audio that is playing.</p>
-<p class="mainHead">Inspiration:</p>
-<p class="pgh-text">One night I decided to go dumpster diving. My neighborhood occasionally has public dumpsters where people can throw away things they don’t need anymore. So, I decided to see if there was anything that might be of use to me. Among my spoils were many different types of cables, chargers, wires, a set of nice speakers (in working condition), and &hellip; an iPhone?! Anyway, I decided I would hook the speakers up to a cheap amplifier I got off amazon so they could play music from my phone. This worked, and was cool and everything, but I thought about ways to make it cooler. I decided I should add an LED board EQ display.</p>
-<p class="mainHead">Development & Challenges:</p>
-<p class="pgh-text">To make an LED display of the EQ, I had to find some way to process the audio signal to get the amplitudes of certain frequency bands. Among my options were FIR filters, Fast Fourier transform, and Analog circuit filters. I decided to go with the analog circuit filters because they do not take up any additional processing power, and they are fairly simple to understand.</p>
-<p class="pgh-text">Using a set of three of these filters (a high pass, band pass, and low pass) I create 3 different frequency bands. After the filtering, an Arduino Nano samples the signals from each filter and processes a sliding window of samples to create a smooth visual for the LED matrix. Finally, the Arduino Nano sends what lights to turn on over Serial to the Adafruit metro mini that controls the LED matrix.</p>
-<p class="mainHead">Shortcomings:</p>
-<p class="pgh-text">Although I designed and tested all the circuitry before soldering it in to perf board, I did not design the entire project before creating it. This combined with the fact I didn&rsquo;t know how to use power tools very well led to the frame of the boom box to be of poor build quality.</p>
-<p class="mainHead">External links:</p>
-<a href = "https://goo.gl/photos/XD4tFCn3Q9bXTCpV7">
-<p class="link">Project Photos!</p>
-</a>
-<a href = "https://github.com/JThr3e/EQBoomBox">
-<p class="link">Github</p>
-</a>
-<br>
-<br>
-<br>
-</div>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>J3 Projects</title>
+
+        <!-- CSS -->
+
+        <!-- google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- files -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.theme.min.css" rel="stylesheet">
+        <link href="assets/css/ionicons.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <!-- Site Header -->
+        <div class="site-header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Header -->
+
+        <section id="header" class="main-header project-header inner-header">
+            <div class="container">
+
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav-bar" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="site-nav-bar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contract.html">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+                
+                <div class="intro row">
+                    <div class="overlay"></div>
+                    <div class="col-sm-12">
+                        <h1>EQ Boom Box - Straight from the Dumpster</h1>
+                    </div>
+                </div> <!-- /.intro.row -->
+            </div> <!-- /.container -->
+            <div class="nutral"></div>
+        </section> <!-- /#header -->
+
+    <!-- FAQ -->
+        <section class="faq">
+            <div class="container page-bgc">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box">
+                            <img class="ft-photo" src="assets/images/EQBB.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+                            <div class="panel panel-default">
+                                <div id="headingOne" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Start-Completion</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        May 2017-July 2017
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingTwo" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="">Languages and Tech Used</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse" aria-expanded="true">
+                                    <div class="panel-body">
+                                        Arduino/C, Analog Passive Filters (RC), Amplifiers, LED matrix, Serial Communications
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingThree" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Description</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        The EQ Boom Box has an AUX cable that can be plugged in to a phone or other audio source. As the EQ Boom Box plays music, the LED display will show a 3 band EQ of the audio that is playing.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingFour" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">Inspiration</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        One night I decided to go dumpster diving. My neighborhood occasionally has public dumpsters where people can throw away things they donâ€™t need anymore. So, I decided to see if there was anything that might be of use to me. Among my spoils were many different types of cables, chargers, wires, a set of nice speakers (in working condition), and … an iPhone?! Anyway, I decided I would hook the speakers up to a cheap amplifier I got off amazon so they could play music from my phone. This worked, and was cool and everything, but I thought about ways to make it cooler. I decided I should add an LED board EQ display.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingFive" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed">Development &amp; Challenges</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" role="tabpanel" aria-labelledby="headingFive" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        To make an LED display of the EQ, I had to find some way to process the audio signal to get the amplitudes of certain frequency bands. Among my options were FIR filters, Fast Fourier transform, and Analog circuit filters. I decided to go with the analog circuit filters because they do not take up any additional processing power, and they are fairly simple to understand.
+                                        <br><br>
+                                        Using a set of three of these filters (a high pass, band pass, and low pass) I create 3 different frequency bands. After the filtering, an Arduino Nano samples the signals from each filter and processes a sliding window of samples to create a smooth visual for the LED matrix. Finally, the Arduino Nano sends what lights to turn on over Serial to the Adafruit metro mini that controls the LED matrix.
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="panel panel-default">
+                                <div id="headingSix" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="collapsed">Shortcomings</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        Although I designed and tested all the circuitry before soldering it in to perf board, I did not design the entire project before creating it. This combined with the fact I didn’t know how to use power tools very well led to the frame of the boom box to be of poor build quality.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        <section id="footer-widget" class="footer-widget">
+            <div class="container header-bg">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>External Links</h3>
+                        <ul>
+                            <li><a href="https://goo.gl/photos/XD4tFCn3Q9bXTCpV7">Project Photos!</a></li>
+                            <li><a href="https://github.com/JThr3e/EQBoomBox">Github Repo</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery-1.12.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
 </html>

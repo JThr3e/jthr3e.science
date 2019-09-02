@@ -1,60 +1,191 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>JThr3e Projects</title>
-	<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
-</head>
-<body>
-<div class="menu">
-<div class="titleLink">
-	JThr3e Projects
-</div>
-<a class="linkBar" href="index.html">
-	Home
-</a>
-<a class="linkBar" href="about.html">
-	About
-</a>
-<a class="linkBar" href="contactme.html">
-	Contact Me
-</a>
-</div>
-<br>
-<br>
-<br>
-<div class="description">
-<p>Music USB - A Prank that <del>never</del> happened<a href="https://hackaday.io/project/28657-attiny-low-power-prank">*</a></p>
-</div>
-<hr width="70%">
-<img class="ft-photo" src="https://s3.amazonaws.com/jthr3e.science/res/musicUSB.jpg">
-<div class="bodyText">
-<p class="mainHead">Start Date:</p>
-<p class="pgh-text">January 2017</p>
-<p class="mainHead">Completion Date:</p>
-<p class="pgh-text"><del>May 2017</del> October 31st, 2017</p>
-<p class="mainHead">Languages & Technologies Used: </p>
-<p class="pgh-text">ATTINY85, Arduino/C, Piezo elements, USB</p>
-<p class="mainHead">Description:</p>
-<p class="pgh-text">The Music USB is a small USB flash drive looking device that, when plugged in, will play a tune.</p>
-<p class="mainHead">Inspiration:</p>
-<p class="pgh-text">	I was thinking of some ways to maybe pull off a funny senior prank. I decided that since the computers at my school had a free USB port on the side facing away from the monitor, this would be a perfect place to hide and/or power a pranking device. To me, the idea of the media center&rsquo;s computers sputtering out video game theme songs whilst frantic librarians and students rushed to find the source seemed quite hilarious.</p>
-<p class="mainHead">Development & Challenges:</p>
-<p class="pgh-text">Unfortunately after completing my design I realized I could barely hear the music the piezo was playing! No one would even notice it if they weren&rsquo;t in a completely quiet room.</p>
-<p class="pgh-text">A few months later, I was on adafruit.com when I read about &ldquo;differential drive&rdquo; for piezo elements. This method used two I/O pins to swat the voltage levels back and forth between high and low that allowed the Music USB to be twice as loud. Alas, school was already too close to ending to have enough time to pull off the prank. [edit] (so I waited until freshman year of college) </p>
-<p class="mainHead">Shortcomings:</p>
-<p class="pgh-text"><a href="http://cornellsun.com/2017/11/10/hundreds-rickrolled-in-mysterious-campus-prank-at-cornell/"><del>I never got to use it to prank anyone D:</del></a> &hellip; perhaps I shall use it sometime in the future ;) [edit] I did a redesign, <a href="https://hackaday.io/project/28657-attiny-low-power-prank">see here</a></p>
-<p class="mainHead">External links:</p>
-<a href = "https://goo.gl/photos/97cKYusvmR1zxDdC8">
-<p class="link">Project Photos!</p>
-</a>
-<a href = "https://github.com/JThr3e/PiezoMusic">
-<p class="link">Github</p>
-</a>
-<br>
-<br>
-<br>
-</div>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>J3 Projects</title>
+
+        <!-- CSS -->
+
+        <!-- google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- files -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.theme.min.css" rel="stylesheet">
+        <link href="assets/css/ionicons.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <!-- Site Header -->
+        <div class="site-header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Header -->
+
+        <section id="header" class="main-header project-header inner-header">
+            <div class="container">
+
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav-bar" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="site-nav-bar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contract.html">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+                
+                <div class="intro row">
+                    <div class="overlay"></div>
+                    <div class="col-sm-12">
+                        <h1>Music USB - A Prank that <del>never</del> happended</h1>
+                    </div>
+                </div> <!-- /.intro.row -->
+            </div> <!-- /.container -->
+            <div class="nutral"></div>
+        </section> <!-- /#header -->
+
+    <!-- FAQ -->
+        <section class="faq">
+            <div class="container page-bgc">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box">
+                            <img class="ft-photo" src="assets/images/musicUSB.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+                            <div class="panel panel-default">
+                                <div id="headingOne" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Start-Completion</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        January 2017-<del>May 2017</del> October 31st, 2017
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingTwo" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="">Languages and Tech Used</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse" aria-expanded="true">
+                                    <div class="panel-body">
+                                        ATTINY85, Arduino/C, Piezo elements, USB
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingThree" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Description</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        The Music USB is a small USB flash drive looking device that, when plugged in, will play a tune.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingFour" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">Inspiration</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        I was thinking of some ways to maybe pull off a funny senior prank. I decided that since the computers at my school had a free USB port on the side facing away from the monitor, this would be a perfect place to hide and/or power a pranking device. To me, the idea of the media center’s computers sputtering out video game theme songs whilst frantic librarians and students rushed to find the source seemed quite hilarious.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingFive" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed">Development &amp; Challenges</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" role="tabpanel" aria-labelledby="headingFive" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        Unfortunately after completing my design I realized I could barely hear the music the piezo was playing! No one would even notice it if they weren’t in a completely quiet room.
+                                        <br><br>
+                                        A few months later, I was on adafruit.com when I read about “differential drive” for piezo elements. This method used two I/O pins to swat the voltage levels back and forth between high and low that allowed the Music USB to be twice as loud. Alas, school was already too close to ending to have enough time to pull off the prank. [edit] (so I waited until freshman year of college)
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="panel panel-default">
+                                <div id="headingSix" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="collapsed">Shortcomings</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <a href="http://cornellsun.com/2017/11/10/hundreds-rickrolled-in-mysterious-campus-prank-at-cornell/"><del>I never got to use it to prank anyone D:</del></a> … perhaps I shall use it sometime in the future ;) [edit] I did a redesign, <a href="https://hackaday.io/project/28657-attiny-low-power-prank">see here</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        <section id="footer-widget" class="footer-widget">
+            <div class="container header-bg">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>External Links</h3>
+                        <ul>
+                            <li><a href="https://goo.gl/photos/97cKYusvmR1zxDdC8">Project Photos!</a></li>
+                            <li><a href="https://github.com/JThr3e/PiezoMusic">Github Repo</a></li>
+                            <li><a href="https://hackaday.io/project/28657-attiny-low-power-prank">Hackaday Project</a></li>
+                            <li><a href="http://cornellsun.com/2017/11/10/hundreds-rickrolled-in-mysterious-campus-prank-at-cornell/">Cornell Sun Article</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery-1.12.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
 </html>

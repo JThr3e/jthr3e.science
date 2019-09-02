@@ -1,61 +1,194 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>JThr3e Projects</title>
-	<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
-</head>
-<body>
-<div class="menu">
-<div class="titleLink">
-	JThr3e Projects
-</div>
-<a class="linkBar" href="index.html">
-	Home
-</a>
-<a class="linkBar" href="about.html">
-	About
-</a>
-<a class="linkBar" href="contactme.html">
-	Contact Me
-</a>
-</div>
-<br>
-<br>
-<br>
-<div class="description">
-<p>B.U.G. - The Basically Useless Gearbox</p>
-</div>
-<hr width="70%">
-<img class="ft-photo" src="https://s3.amazonaws.com/jthr3e.science/res/bug.jpg">
-<div class="bodyText">
-<p class="mainHead">Start Date:</p>
-<p class="pgh-text">August 2016</p>
-<p class="mainHead">Completion Date:</p>
-<p class="pgh-text">B.U.G. is never complete >:)</p>
-<p class="mainHead">Languages & Technologies Used: </p>
-<p class="pgh-text">ATmega32u4 (Adafruit 32u4 Bluefruit), Bluetooth LE, Motors & Drivers, Ultrasonic (obstacle avoidance), camera, C++/Arduino</p>
-<p class="mainHead">Description:</p>
-<p class="pgh-text">The Basically Useless Gearbox, or B.U.G. for short, is a robot that can dance, wander around aimlessly whilst avoiding obstacles, take pictures, play music, or follow your every command via an iPhone app.</p>
-<p class="mainHead">Inspiration:</p>
-<p class="pgh-text">	Long long ago (summer of 2015), I was on the 3rd floor of an electronics mall in Taipei, Taiwan when I walk into a somewhat sketchy looking shop. To my delight, they were selling a whole bunch of cool stuff (Arduinos, Raspberry Pis, robots, etc.). After looking around a bit my eyes settled upon a plastic chassis (I had attempted hacking a really old motorized toy I had with my Arduino before with limited success). I bought the chassis with the intent of getting my Arduino to control it someday.</p>
-<p class="pgh-text">	Toward the end of summer of 2016 (about a year later), I was bored and decided to build a very small box like robot using the chassis that I had bought. Instead of using the full chassis, I decided just to glue the gearbox motors together with a piece a cardboard resulting in a much smaller size.</p>
-<p class="pgh-text">	I would often bring this contraption to school with me and a friend started calling it my little bug. Hence, as a joke, I named it B.U.G., the Basically Useless Gearbox.</p>
-<p class="mainHead">Development & Challenges:</p>
-<p class="pgh-text">One of the main challenges with B.U.G. is its size. I can only attach so many things to it before it becomes impractical. This made powering BUG a challenge. At first I used 4 triple As and tried a few different placements and battery packs, after a time it became clear 4 triple As and their 1000 mah capacity would give my 500ma power hungry robot very little battery life. I eventually switched to 4 double A batteries instead, and I plan to eventually switch to rechargeable lithium-ion batteries.</p>
-<p class="mainHead">Shortcomings:</p>
-<p class="pgh-text">Not too many shortcomings in terms of living up to its name I&rsquo;m afraid. However, if I were to choose something, I think that B.U.G.&rsquo;s size is both a redeeming and restricting feature. It limits what I can add on to it while also challenging me to see what I can do on such a small platform.</p>
-<p class="mainHead">External links:</p>
-</a>
-<a href = "https://goo.gl/photos/VsgBxT3gCDTKYFwZA">
-<p class="link">Project Photos!</p>
-</a>
-<a href = "https://github.com/JThr3e/didactic-disco-bug">
-<p class="link">Github</p>
-<br>
-<br>
-<br>
-</div>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>J3 Projects</title>
+
+        <!-- CSS -->
+
+        <!-- google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- files -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.theme.min.css" rel="stylesheet">
+        <link href="assets/css/ionicons.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <!-- Site Header -->
+        <div class="site-header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Header -->
+
+        <section id="header" class="main-header project-header inner-header">
+            <div class="container">
+
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav-bar" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="site-nav-bar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contract.html">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+                
+                <div class="intro row">
+                    <div class="overlay"></div>
+                    <div class="col-sm-12">
+                        <h1>B.U.G. - The Basically Useless Gearbox</h1>
+                    </div>
+                </div> <!-- /.intro.row -->
+            </div> <!-- /.container -->
+            <div class="nutral"></div>
+        </section> <!-- /#header -->
+
+    <!-- FAQ -->
+        <section class="faq">
+            <div class="container page-bgc">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box">
+                            <img class="ft-photo" src="assets/images/bug.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+                            <div class="panel panel-default">
+                                <div id="headingOne" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Start-Completion</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        August 2016-August 2017 (periodic modification)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingTwo" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="">Languages and Tech Used</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse" aria-expanded="true">
+                                    <div class="panel-body">
+                                        ATmega32u4 (Adafruit 32u4 Bluefruit), Bluetooth LE, Motors &amp; Drivers, Ultrasonic (obstacle avoidance), camera, C++/Arduino
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingThree" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Description</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        The Basically Useless Gearbox, or B.U.G. for short, is a robot that can dance, wander around aimlessly whilst avoiding obstacles, take pictures, play music, or follow your every command via an iPhone app.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingFour" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">Inspiration</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        Long long ago (summer of 2015), I was on the 3rd floor of an electronics mall in Taipei, Taiwan when I walk into a somewhat sketchy looking shop. To my delight, they were selling a whole bunch of cool stuff (Arduinos, Raspberry Pis, robots, etc.). After looking around a bit my eyes settled upon a plastic chassis (I had attempted hacking a really old motorized toy I had with my Arduino before with limited success). I bought the chassis with the intent of getting my Arduino to control it someday.
+                                        <br><br>
+                                        Toward the end of summer of 2016 (about a year later), I was bored and decided to build a very small box like robot using the chassis that I had bought. Instead of using the full chassis, I decided just to glue the gearbox motors together with a piece a cardboard resulting in a much smaller size.
+                                        <br><br>
+                                        I would often bring this contraption to school with me and a friend started calling it my little bug. Hence, as a joke, I named it B.U.G., the Basically Useless Gearbox.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="headingFive" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed">Development &amp; Challenges</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" role="tabpanel" aria-labelledby="headingFive" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        One of the main challenges with B.U.G. is its size. I can only attach so many things to it before it becomes impractical. This made powering BUG a challenge. At first I used 4 triple As and tried a few different placements and battery packs, after a time it became clear 4 triple As and their 1000 mah capacity would give my 500ma power hungry robot very little battery life. I eventually switched to 4 double A batteries instead, and I plan to eventually switch to rechargeable lithium-ion batteries.
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="panel panel-default">
+                                <div id="headingSix" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="collapsed">Shortcomings</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        Not too many shortcomings in terms of living up to its name I’m afraid. However, if I were to choose something, I think that B.U.G.’s size is both a redeeming and restricting feature. It limits what I can add on to it while also challenging me to see what I can do on such a small platform.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        <section id="footer-widget" class="footer-widget">
+            <div class="container header-bg">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>External Links</h3>
+                        <ul>
+                            <li><a href="https://goo.gl/photos/VsgBxT3gCDTKYFwZA">Project Photos!</a></li>
+                            <li><a href="https://github.com/JThr3e/didactic-disco-bug">Github Repo</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery-1.12.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
 </html>
